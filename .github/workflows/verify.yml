@@ -1,4 +1,4 @@
-name: Run CI pipeline
+name: CI: Tests & Lints
 
 on:
   workflow_dispatch:
