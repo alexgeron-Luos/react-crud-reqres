@@ -1,4 +1,4 @@
-[![Run CI pipeline](https://github.com/alexgeron-Luos/react-crud-reqres/actions/workflows/verify.yml/badge.svg)](https://github.com/alexgeron-Luos/react-crud-reqres/actions/workflows/verify.yml)
+[![CI: Tests](https://github.com/alexgeron-Luos/react-crud-reqres/actions/workflows/verify.yml/badge.svg)](https://github.com/alexgeron-Luos/react-crud-reqres/actions/workflows/verify.yml)
 
 # Users gestion with React.js and ReqRes.in fake data API
 
