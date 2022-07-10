@@ -9,14 +9,11 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { addTitle } from '../../src/components/reducer/headerSlice';
 import {
-  addUser,
-  removeUser,
-  selectUsers,
+  storeUser,
   nextPage,
   getCurrentPage,
 } from '../../src/components/reducer/usersSlice';
 import * as service from '../../src/components/middleware';
-
 
 const HomePage = () => {
   const reduxCurrentPage = useSelector(getCurrentPage);
@@ -28,7 +25,7 @@ const HomePage = () => {
       // const data = JSON.parse(res.data.data);
       res.data.data.forEach((user) => {
         dispatch(
-          addUser({
+          storeUser({
             id: user.id,
             avatar: user.avatar,
             email: user.email,
