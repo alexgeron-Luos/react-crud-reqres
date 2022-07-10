@@ -8,7 +8,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Styles from './details.module.scss';
 import {
-  selectCurrentUser,
+  getCurrentUser,
   editCurrentUser,
 } from '../../src/components/reducer/usersSlice';
 import { addTitle } from '../../src/components/reducer/headerSlice';
@@ -19,7 +19,7 @@ import BackButton from '../../src/components/container/button/backButton';
 
 const Details = () => {
   const [edit, setEdit] = useState(true);
-  const currentUser = useSelector(selectCurrentUser);
+  const currentUser = useSelector(getCurrentUser);
   const [formValues, setFormValues] = useState(currentUser);
   const dispatch = useDispatch();
 
