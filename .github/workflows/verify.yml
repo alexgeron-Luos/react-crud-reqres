@@ -1,0 +1,28 @@
+name: Run CI pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Cypress tests and linter
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [13.x, 14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        with:
+          build: npm run build
+          start: npm start
+      - name: Lint Action
+        uses: wearerequired/lint-action@v2.0.0
+        with:
+          eslint: true

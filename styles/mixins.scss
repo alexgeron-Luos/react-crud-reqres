@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+@mixin button {
+  width: fit-content;
+  margin: 10px 0;
+}
+
+@mixin hover {
+  color: $darkBlue;
+}
+
+@mixin hoverButton {
+  color: $darkBlue;
+  border-color: $darkBlue;
+}
+
+@mixin flexGridItem {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}

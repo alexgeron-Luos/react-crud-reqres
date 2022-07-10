@@ -1,0 +1,27 @@
+@import '../../styles/mixins.scss';
+
+.flexGridItem {
+  @include flexGridItem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  margin: 30px 0;
+  align-self: center;
+}
+
+.editEuser {
+  @include button;
+  align-self: flex-end;
+  margin-left: 50px;
+}
+
+.editEuser:hover {
+  @include hoverButton;
+}
+
+.saveBtn {
+  width: fit-content;
+  margin: 15px;
+}
