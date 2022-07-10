@@ -1,4 +1,4 @@
-name: CI: Tests & Lints
+name: CI - Tests & Lints
 
 on:
   workflow_dispatch:
