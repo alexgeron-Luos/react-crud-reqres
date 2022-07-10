@@ -1,3 +1,5 @@
+[![Run CI pipeline](https://github.com/alexgeron-Luos/react-crud-reqres/actions/workflows/verify.yml/badge.svg)](https://github.com/alexgeron-Luos/react-crud-reqres/actions/workflows/verify.yml)
+
 # Users gestion with React.js and ReqRes.in fake data API
 
 # Features:
@@ -15,10 +17,6 @@ In the project directory, you can run:
 yarn install
 yarn dev
 ```
-
-# Env variables:
-
-- NEXT_PUBLIC_API_URL -> https://reqres.in
 
 # Technologies:
 
